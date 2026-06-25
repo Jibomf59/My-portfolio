@@ -17,14 +17,14 @@ export default function About() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-500/7 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/7 rounded-full blur-[150px] pointer-events-none" />
 
-      <div ref={ref} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section label + heading */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3">
             WHO I AM
@@ -35,7 +35,7 @@ export default function About() {
           <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
           {/* LEFT: Photo */}
           <motion.div
