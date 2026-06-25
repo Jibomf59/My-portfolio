@@ -23,7 +23,7 @@ const aiResponses: Record<string, string> = {
   available:
     'Yes! I\'m actively looking for full stack developer roles and freelance projects. I\'m based in Ethiopia but open to remote work worldwide.',
   contact:
-    'You can reach me at jibrilfaruk15@gmail.com, call/WhatsApp +251 988 683 159, or connect on LinkedIn and GitHub. I typically respond within 24 hours!',
+    'You can reach me at jibofaruk59@gmail.com, call/WhatsApp +251 988 683 159, or connect on LinkedIn and GitHub. I typically respond within 24 hours!',
 };
 
 let msgIdCounter = 0;
@@ -57,7 +57,7 @@ export default function AiChat() {
       const aiMsg: Message = {
         id: ++msgIdCounter,
         role: 'ai',
-        text: aiResponses[key] ?? "I'm not sure about that. Feel free to reach out directly at jibrilfaruk15@gmail.com!",
+        text: aiResponses[key] ?? "I'm not sure about that. Feel free to reach out directly at jibofaruk59@gmail.com!",
       };
       setMessages((prev) => [...prev, aiMsg]);
       setThinking(false);

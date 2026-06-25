@@ -4,8 +4,8 @@ import { HiMail } from 'react-icons/hi';
 
 const socials = [
   { icon: FaGithub, href: 'https://github.com/Jibomf59', label: 'GitHub' },
-  { icon: FaLinkedin, href: 'https://linkedin.com/in/jibrilfaruk15gmail', label: 'LinkedIn' },
-  { icon: HiMail, href: 'mailto:jibrilfaruk15@gmail.com', label: 'Email' },
+  { icon: FaLinkedin, href: 'https://linkedin.com/in/jibofaruk59', label: 'LinkedIn' },
+  { icon: HiMail, href: 'mailto:jibofaruk59@gmail.com', label: 'Email' },
   { icon: FaTelegram, href: 'https://t.me/jibomf', label: 'Telegram' },
 ];
 
@@ -71,7 +71,7 @@ export default function Footer() {
           className="text-slate-600 text-xs text-center"
         >
           © 2026{' '}
-          <span className="text-slate-400 font-medium">Jibril Mohammed Faruk</span>
+          <span className="text-slate-400 font-medium">Jibril Mohammed</span>
           . All rights reserved.
         </motion.p>
       </div>

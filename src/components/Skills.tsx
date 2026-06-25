@@ -65,8 +65,8 @@ export default function Skills() {
           <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        {/* Skill groups */}
-        <div className="space-y-6">
+        {/* Skill groups — 2×2 grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {skillGroups.map((group, gi) => (
             <motion.div
               key={group.label}

@@ -9,8 +9,8 @@ const infoCards = [
   {
     icon: HiMail,
     label: 'Email',
-    value: 'jibrilfaruk15@gmail.com',
-    href: 'mailto:jibrilfaruk15@gmail.com',
+    value: 'jibofaruk59@gmail.com',
+    href: 'mailto:jibofaruk59@gmail.com',
     iconBg: 'bg-blue-500/15',
     iconColor: 'text-blue-400',
   },
@@ -34,7 +34,7 @@ const infoCards = [
 
 const socials = [
   { icon: FaGithub, href: 'https://github.com/Jibomf59', label: 'GitHub' },
-  { icon: FaLinkedin, href: 'https://linkedin.com/in/jibrilfaruk15gmail', label: 'LinkedIn' },
+  { icon: FaLinkedin, href: 'https://linkedin.com/in/jibofaruk59', label: 'LinkedIn' },
   { icon: FaTelegram, href: 'https://t.me/jibomf', label: 'Telegram' },
   { icon: FaWhatsapp, href: 'https://wa.me/251988683159', label: 'WhatsApp' },
 ];
@@ -52,7 +52,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:jibrilfaruk15@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:jibofaruk59@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);

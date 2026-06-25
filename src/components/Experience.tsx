@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 const timelineItems = [
   {
     title: 'Computer Science Graduate',
-    period: '2020 – 2024',
+    period: '2023 – 2026',
     company: 'Haramaya University',
     description:
       'Completed a B.Sc. in Computer Science with focus on software engineering, web development, algorithms, and AI systems. Built an AI-powered academic assistant as thesis project.',
@@ -16,7 +16,7 @@ const timelineItems = [
   },
   {
     title: 'Full Stack Developer',
-    period: '2023 – Present',
+    period: '2024 – Present',
     company: 'Personal Projects & Freelance',
     description:
       'Building responsive and modern web applications using React, Node.js, TypeScript, and Tailwind CSS. Delivered 5+ projects including accessibility tools, inventory systems, and REST APIs.',
