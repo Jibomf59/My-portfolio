@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C4956A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:0" />
+    </radialGradient>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="190"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background circle with border -->
+  <circle cx="200" cy="200" r="198" fill="none" stroke="url(#glow)" stroke-width="4" opacity="0.6"/>
+  <circle cx="200" cy="200" r="194" fill="url(#bg)"/>
+  
+  <g clip-path="url(#circle)">
+    <!-- Background glow -->
+    <circle cx="200" cy="200" r="190" fill="url(#bgGlow)"/>
+    
+    <!-- Body/Shirt -->
+    <ellipse cx="200" cy="420" rx="160" ry="140" fill="url(#shirt)"/>
+    
+    <!-- Neck -->
+    <rect x="175" y="230" width="50" height="40" rx="10" fill="url(#skin)"/>
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="170" rx="70" ry="80" fill="url(#skin)"/>
+    
+    <!-- Hair -->
+    <ellipse cx="200" cy="120" rx="72" ry="50" fill="#1a1a1a"/>
+    <ellipse cx="165" cy="140" rx="15" ry="30" fill="#1a1a1a"/>
+    <ellipse cx="235" cy="140" rx="15" ry="30" fill="#1a1a1a"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="178" cy="175" rx="10" ry="8" fill="white"/>
+    <ellipse cx="222" cy="175" rx="10" ry="8" fill="white"/>
+    <circle cx="180" cy="175" r="5" fill="#2D1B69"/>
+    <circle cx="224" cy="175" r="5" fill="#2D1B69"/>
+    <circle cx="181" cy="173" r="2" fill="white"/>
+    <circle cx="225" cy="173" r="2" fill="white"/>
+    
+    <!-- Eyebrows -->
+    <path d="M165 162 Q178 155 191 162" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M209 162 Q222 155 235 162" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Nose -->
+    <path d="M197 185 Q200 195 203 185" stroke="#B8956A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Smile -->
+    <path d="M185 205 Q200 220 215 205" stroke="#A67B5B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Code bracket decoration -->
+    <text x="100" y="350" font-family="monospace" font-size="24" fill="#3B82F6" opacity="0.3">&lt;/&gt;</text>
+    <text x="260" y="100" font-family="monospace" font-size="18" fill="#8B5CF6" opacity="0.3">{}</text>
+  </g>
+</svg>
