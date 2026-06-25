@@ -50,7 +50,7 @@ export default function About() {
               <div className="absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 opacity-80" />
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden">
                 <img
-                  src="/images/jj.jpg"
+                  src="/images/pro.jpg"
                   alt="Jibril Mohammed Faruk"
                   className="w-full h-full object-cover"
                 />
