@@ -13,10 +13,10 @@ const projects = [
       'An AI-powered accessibility tool helping visually impaired students at Haramaya University access educational resources through voice interaction, real-time speech, and intelligent responses.',
     tech: ['React', 'JavaScript', 'AI APIs', 'Web Speech API', 'CSS3'],
     github: 'https://github.com/Jibomf59',
+    demo: null,
     glowFrom: 'from-blue-500/20',
     glowTo: 'to-violet-500/20',
     borderHover: 'hover:border-blue-500/30',
-    tagColor: 'text-blue-400',
   },
   {
     title: 'Inventory Master',
@@ -27,10 +27,10 @@ const projects = [
       'A full-stack inventory management system for Adama City Administration to track, manage, and report on city assets — replacing manual record-keeping with a reliable digital solution.',
     tech: ['Java', 'MySQL', 'JDBC', 'OOP', 'Desktop UI'],
     github: 'https://github.com/Jibomf59/Inventory-master.git',
+    demo: null,
     glowFrom: 'from-amber-500/20',
     glowTo: 'to-orange-500/20',
     borderHover: 'hover:border-amber-500/30',
-    tagColor: 'text-amber-400',
   },
   {
     title: 'ATM Simulation',
@@ -41,10 +41,24 @@ const projects = [
       'A command-line ATM simulation in Java handling core banking: PIN authentication, balance inquiry, deposit, and withdrawal — demonstrating strong OOP and data structure fundamentals.',
     tech: ['Java', 'OOP', 'Console I/O', 'Data Structures'],
     github: 'https://github.com/Jibomf59/ATM_Machine.git',
+    demo: null,
     glowFrom: 'from-emerald-500/20',
     glowTo: 'to-teal-500/20',
     borderHover: 'hover:border-emerald-500/30',
-    tagColor: 'text-emerald-400',
+  },
+  {
+    title: 'Personal Portfolio',
+    emoji: '🌐',
+    initial: 'P',
+    emojiBg: 'bg-gradient-to-br from-pink-500 to-rose-600',
+    description:
+      'A modern, responsive full-stack developer portfolio built with React, TypeScript, and Tailwind CSS — featuring smooth animations, an AI chat assistant, dark theme, and sections for skills, projects, and experience.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    github: 'https://github.com/Jibomf59/My-portfolio',
+    demo: 'https://my-portfolio-jibomf59.netlify.app',
+    glowFrom: 'from-pink-500/20',
+    glowTo: 'to-rose-500/20',
+    borderHover: 'hover:border-pink-500/30',
   },
 ];
 
@@ -91,7 +105,6 @@ export default function Projects() {
 
                 {/* Visual preview */}
                 <div className={`relative h-40 ${project.emojiBg} flex items-center justify-center overflow-hidden`}>
-                  {/* Initial letter watermark */}
                   <span className="absolute text-[120px] font-black text-white/10 select-none leading-none">
                     {project.initial}
                   </span>
@@ -121,18 +134,34 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  {/* GitHub button */}
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.03 }}
-                    whileTap={{ scale: 0.97 }}
-                    className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 hover:border-white/20 text-sm font-semibold transition-all"
-                  >
-                    <FaGithub size={15} />
-                    View on GitHub
-                  </motion.a>
+                  {/* Buttons */}
+                  <div className={`grid gap-2 ${project.demo ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 hover:border-white/20 text-sm font-semibold transition-all"
+                    >
+                      <FaGithub size={14} />
+                      GitHub
+                    </motion.a>
+
+                    {project.demo && (
+                      <motion.a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.97 }}
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-500/20 to-violet-500/20 border border-blue-500/30 text-blue-300 hover:text-white hover:from-blue-500/30 hover:to-violet-500/30 text-sm font-semibold transition-all"
+                      >
+                        <HiExternalLink size={14} />
+                        Live Demo
+                      </motion.a>
+                    )}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -143,7 +172,7 @@ export default function Projects() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.55 }}
           className="text-center mt-12"
         >
           <motion.a
