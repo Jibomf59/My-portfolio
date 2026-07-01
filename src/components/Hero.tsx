@@ -118,8 +118,8 @@ export default function Hero() {
           {/* Resume download */}
           <motion.div variants={item}>
             <a
-              href="/Jibril_Mohammed_CV.pdf"
-              download="Jibril_Mohammed_CV.pdf"
+              href="/Jibril_Mohammed_CV.html"
+              download="Jibril_Mohammed_CV.html"
               className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors group"
             >
               <HiDownload size={16} className="group-hover:animate-bounce" />
