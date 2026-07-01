@@ -116,7 +116,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Resume download */}
-          <motion.div variants={item}>
+          <motion.div variants={item} className="flex items-center gap-3">
             <a
               href="https://jibrilcv.tiiny.site"
               target="_blank"
@@ -124,7 +124,16 @@ export default function Hero() {
               className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors group"
             >
               <HiDownload size={16} className="group-hover:animate-bounce" />
-              Download Resume
+              View Resume
+            </a>
+            <span className="text-slate-700">|</span>
+            <a
+              href="/Jibril_Mohammed_CV.pdf"
+              download="Jibril_Mohammed_CV.pdf"
+              className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors group"
+            >
+              <HiDownload size={16} className="group-hover:animate-bounce" />
+              Download PDF
             </a>
           </motion.div>
 
