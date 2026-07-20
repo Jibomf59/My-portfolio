@@ -73,16 +73,16 @@ export default function Hero() {
           {/* Subtitle */}
           <motion.p
             variants={item}
-            className="text-xl sm:text-2xl text-slate-300 font-light"
+            className="text-xl sm:text-2xl text-zinc-300 font-light"
           >
             Full Stack Developer —{' '}
-            <span className="text-slate-400">I Turn Ideas Into Web Experiences</span>
+            <span className="text-zinc-400">I Turn Ideas Into Web Experiences</span>
           </motion.p>
 
           {/* Short bio */}
           <motion.p
             variants={item}
-            className="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed"
+            className="text-zinc-400 text-base sm:text-lg max-w-xl leading-relaxed"
           >
             Computer Science graduate passionate about building modern web applications
             using React, Node.js, and modern full-stack tooling — creating clean,
@@ -121,7 +121,7 @@ export default function Hero() {
               href="https://jibrilcv.tiiny.site"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-blue-400 text-sm font-medium transition-colors group"
+              className="inline-flex items-center gap-2 text-zinc-400 hover:text-blue-400 text-sm font-medium transition-colors group"
             >
               <HiDownload size={16} className="group-hover:animate-bounce" />
               Download Resume

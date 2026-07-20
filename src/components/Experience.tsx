@@ -79,11 +79,11 @@ function TimelineItem({
               <p className={`text-sm font-medium ${item.accent}`}>{item.company}</p>
             </div>
           </div>
-          <span className="self-start sm:self-auto px-3 py-1 text-xs font-semibold rounded-full bg-white/5 border border-white/10 text-slate-400 whitespace-nowrap">
+          <span className="self-start sm:self-auto px-3 py-1 text-xs font-semibold rounded-full bg-white/5 border border-white/10 text-zinc-400 whitespace-nowrap">
             {item.period}
           </span>
         </div>
-        <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
+        <p className="text-zinc-400 text-sm leading-relaxed">{item.description}</p>
       </div>
     </motion.div>
   );

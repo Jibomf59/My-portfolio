@@ -86,7 +86,7 @@ export default function Skills() {
                     animate={inView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.3, delay: 0.2 + gi * 0.1 + pi * 0.04 }}
                     whileHover={{ scale: 1.08, y: -2 }}
-                    className={`px-4 py-1.5 rounded-full text-sm font-medium text-slate-300 bg-white/[0.04] border cursor-default transition-all ${group.pillStyle}`}
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium text-zinc-300 bg-white/[0.04] border cursor-default transition-all ${group.pillStyle}`}
                   >
                     {pill}
                   </motion.span>
@@ -103,7 +103,7 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.55 }}
           className="mt-8 p-5 rounded-2xl bg-gradient-to-r from-blue-500/6 via-violet-500/6 to-cyan-500/6 border border-white/7 text-center"
         >
-          <p className="text-slate-400 text-sm">
+          <p className="text-zinc-400 text-sm">
             <span className="text-white font-semibold">Currently exploring: </span>
             Next.js · Laravel · Docker · Testing (Vitest / RTL) · Advanced Framer Motion
           </p>

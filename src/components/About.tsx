@@ -79,7 +79,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="space-y-6"
           >
-            <p className="text-slate-300 text-[15px] leading-relaxed">
+            <p className="text-zinc-300 text-[15px] leading-relaxed">
               I'm{' '}
               <span className="px-1.5 py-0.5 rounded bg-blue-500/15 border border-blue-500/25 text-blue-300 font-semibold">
                 Jibril
@@ -88,7 +88,7 @@ export default function About() {
               University. I'm passionate about building modern, accessible web applications that solve
               real-world problems and deliver exceptional user experiences.
             </p>
-            <p className="text-slate-400 text-[15px] leading-relaxed">
+            <p className="text-zinc-400 text-[15px] leading-relaxed">
               With a strong foundation in React, Node.js, TypeScript, and Tailwind CSS, I specialize
               in building complete web solutions from UI to API. I love clean code, responsive design,
               and bridging the gap between great design and solid engineering — always eager to
@@ -110,7 +110,7 @@ export default function About() {
                   >
                     {s.value}
                   </span>
-                  <p className="text-slate-500 text-[11px] mt-1 leading-tight">{s.label}</p>
+                  <p className="text-zinc-500 text-[11px] mt-1 leading-tight">{s.label}</p>
                 </motion.div>
               ))}
             </div>
