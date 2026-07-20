@@ -86,7 +86,7 @@ export default function AiChat() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 30, scale: 0.95 }}
             transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-44 right-4 sm:right-6 z-[200] w-[calc(100vw-2rem)] max-w-sm flex flex-col rounded-2xl bg-[#0d1117]/95 backdrop-blur-2xl border border-white/10 shadow-2xl overflow-hidden"
+            className="fixed bottom-44 right-4 sm:right-6 z-[200] w-[calc(100vw-2rem)] max-w-sm flex flex-col rounded-2xl bg-[#0a0a0a]/95 backdrop-blur-2xl border border-white/10 shadow-2xl overflow-hidden"
             style={{ maxHeight: '480px' }}
           >
             {/* Header */}

@@ -13,7 +13,7 @@ import AiChat from './components/AiChat';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0d1117] text-white font-['Inter',sans-serif] overflow-x-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Inter',sans-serif] overflow-x-hidden">
       <ParticleBackground />
       <ScrollProgress />
       <Navbar />
