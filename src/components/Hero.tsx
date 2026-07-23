@@ -135,7 +135,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-pink-400 hover:border-pink-400/30 hover:bg-pink-400/8 transition-all"
+              className="p-2.5 rounded-xl bg-[#24292e] border border-white/10 text-white hover:bg-[#2f363d] hover:border-white/20 transition-all"
               aria-label="GitHub"
             >
               <FaGithub size={20} />
