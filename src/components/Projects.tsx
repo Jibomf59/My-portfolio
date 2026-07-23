@@ -79,13 +79,13 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400 mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-pink-400 mb-3">
             WHAT I'VE BUILT
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Projects
           </h2>
-          <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
+          <div className="w-14 h-0.5 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
         {/* Grid */}
@@ -155,7 +155,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
-                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-500/20 to-violet-500/20 border border-blue-500/30 text-blue-300 hover:text-white hover:from-blue-500/30 hover:to-violet-500/30 text-sm font-semibold transition-all"
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/30 text-pink-300 hover:text-white hover:from-pink-500/30 hover:to-rose-500/30 text-sm font-semibold transition-all"
                       >
                         <HiExternalLink size={14} />
                         Live Demo

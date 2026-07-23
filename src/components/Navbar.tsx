@@ -56,11 +56,11 @@ export default function Navbar() {
           <motion.a
             href="#home"
             onClick={(e) => { e.preventDefault(); scrollTo('#home'); }}
-            className="text-xl lg:text-2xl font-extrabold bg-gradient-to-r from-blue-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent tracking-tight"
+            className="text-xl lg:text-2xl font-extrabold bg-gradient-to-r from-pink-400 via-rose-400 to-pink-300 bg-clip-text text-transparent tracking-tight"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            JF<span className="text-blue-400">.</span>dev
+            JF<span className="text-pink-400">.</span>dev
           </motion.a>
 
           {/* Desktop links */}
@@ -75,13 +75,13 @@ export default function Navbar() {
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.96 }}
                 >
-                  <span className={`relative z-10 transition-colors ${isActive ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}>
+                  <span className={`relative z-10 transition-colors ${isActive ? 'text-pink-400' : 'text-slate-400 hover:text-white'}`}>
                     {link.name}
                   </span>
                   {isActive && (
                     <motion.div
                       layoutId="nav-active"
-                      className="absolute inset-0 bg-blue-500/10 rounded-lg border border-blue-500/20"
+                      className="absolute inset-0 bg-pink-500/10 rounded-lg border border-pink-500/20"
                       transition={{ type: 'spring', bounce: 0.2, duration: 0.55 }}
                     />
                   )}
@@ -95,7 +95,7 @@ export default function Navbar() {
             <motion.a
               href="#contact"
               onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
-              className="hidden lg:flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-shadow"
+              className="hidden lg:flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-lg shadow-pink-500/20 hover:shadow-pink-500/40 transition-shadow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -136,7 +136,7 @@ export default function Navbar() {
                     onClick={() => scrollTo(link.href)}
                     className={`flex w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                       isActive
-                        ? 'text-blue-400 bg-blue-500/10 border border-blue-500/15'
+                        ? 'text-pink-400 bg-pink-500/10 border border-pink-500/15'
                         : 'text-slate-300 hover:text-white hover:bg-white/5'
                     }`}
                   >
@@ -150,7 +150,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, x: -16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex mt-3 text-center justify-center px-4 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-semibold text-sm"
+                className="flex mt-3 text-center justify-center px-4 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm"
               >
                 Hire Me
               </motion.a>

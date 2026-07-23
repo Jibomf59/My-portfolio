@@ -65,7 +65,7 @@ export default function Hero() {
           >
             <span className="text-white">Hi, I'm</span>
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-400 via-rose-400 to-pink-300 bg-clip-text text-transparent">
               Jibril Mohammed
             </span>
           </motion.h1>
@@ -120,7 +120,7 @@ export default function Hero() {
             <a
               href="/Jibril_Mohammed_CV.pdf"
               download="Jibril_Mohammed_CV.pdf"
-              className="inline-flex items-center gap-2 text-zinc-400 hover:text-blue-400 text-sm font-medium transition-colors group"
+              className="inline-flex items-center gap-2 text-zinc-400 hover:text-pink-400 text-sm font-medium transition-colors group"
             >
               <HiDownload size={16} className="group-hover:animate-bounce" />
               Download Resume
@@ -135,7 +135,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-blue-400 hover:border-blue-400/30 hover:bg-blue-400/8 transition-all"
+              className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-pink-400 hover:border-pink-400/30 hover:bg-pink-400/8 transition-all"
               aria-label="GitHub"
             >
               <FaGithub size={20} />
@@ -146,7 +146,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-blue-400 hover:border-blue-400/30 hover:bg-blue-400/8 transition-all"
+              className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-pink-400 hover:border-pink-400/30 hover:bg-pink-400/8 transition-all"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={20} />
@@ -168,7 +168,7 @@ export default function Hero() {
           transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
           className="w-5 h-8 rounded-full border border-white/20 flex justify-center pt-1.5"
         >
-          <div className="w-1 h-2 rounded-full bg-blue-400" />
+          <div className="w-1 h-2 rounded-full bg-pink-400" />
         </motion.div>
       </motion.div>
     </section>

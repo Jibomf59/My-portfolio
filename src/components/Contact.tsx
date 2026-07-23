@@ -81,7 +81,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             Contact Me
           </h2>
-          <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
+          <div className="w-14 h-0.5 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -93,7 +93,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             <div className="relative group">
-              <div className="absolute -inset-px bg-gradient-to-br from-blue-500/25 to-violet-500/25 rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute -inset-px bg-gradient-to-br from-pink-500/25 to-rose-500/25 rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative p-8 rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/10 shadow-2xl">
                 <h3 className="text-white font-bold text-lg mb-6">Send a Message</h3>
 
@@ -125,7 +125,7 @@ export default function Contact() {
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       required
                       placeholder="Your name"
-                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/25 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-pink-500/50 focus:ring-1 focus:ring-pink-500/25 transition-all"
                     />
                   </div>
 
@@ -140,7 +140,7 @@ export default function Contact() {
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
                       placeholder="your@email.com"
-                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/25 transition-all"
+                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-pink-500/50 focus:ring-1 focus:ring-pink-500/25 transition-all"
                     />
                   </div>
 
@@ -155,7 +155,7 @@ export default function Contact() {
                       required
                       rows={5}
                       placeholder="Hello Jibril, I'd like to discuss..."
-                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/25 transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/10 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-pink-500/50 focus:ring-1 focus:ring-pink-500/25 transition-all resize-none"
                     />
                   </div>
 
@@ -164,7 +164,7 @@ export default function Contact() {
                     disabled={loading}
                     whileHover={{ scale: loading ? 1 : 1.02 }}
                     whileTap={{ scale: loading ? 1 : 0.98 }}
-                    className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-shadow disabled:opacity-70"
+                    className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm shadow-lg shadow-pink-500/20 hover:shadow-pink-500/35 transition-shadow disabled:opacity-70"
                   >
                     {loading ? (
                       <>

@@ -56,13 +56,13 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-violet-400 mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-pink-400 mb-3">
             WHAT I KNOW
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             My Skills
           </h2>
-          <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
+          <div className="w-14 h-0.5 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
         {/* Skill groups — 2×2 grid */}

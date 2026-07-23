@@ -26,13 +26,13 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-pink-400 mb-3">
             WHO I AM
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
             About Me
           </h2>
-          <div className="w-14 h-0.5 bg-gradient-to-r from-blue-500 to-violet-500 mx-auto mt-4 rounded-full" />
+          <div className="w-14 h-0.5 bg-gradient-to-r from-pink-500 to-rose-500 mx-auto mt-4 rounded-full" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
@@ -46,8 +46,8 @@ export default function About() {
           >
             <div className="relative">
               {/* Gradient ring */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 blur opacity-40" />
-              <div className="absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-blue-500 via-violet-500 to-cyan-500 opacity-80" />
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-pink-500 via-rose-500 to-pink-400 blur opacity-40" />
+              <div className="absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-pink-500 via-rose-500 to-pink-400 opacity-80" />
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden">
                 <img
                   src="/images/pro.jpg"
@@ -81,7 +81,7 @@ export default function About() {
           >
             <p className="text-zinc-300 text-[15px] leading-relaxed">
               I'm{' '}
-              <span className="px-1.5 py-0.5 rounded bg-blue-500/15 border border-blue-500/25 text-blue-300 font-semibold">
+              <span className="px-1.5 py-0.5 rounded bg-pink-500/15 border border-pink-500/25 text-pink-300 font-semibold">
                 Jibril
               </span>
               , a full stack developer based in Ethiopia with a B.Sc. in Computer Science from Haramaya
@@ -129,7 +129,7 @@ export default function About() {
                 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:shadow-blue-500/35 transition-shadow"
+                className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm shadow-lg shadow-pink-500/20 hover:shadow-pink-500/35 transition-shadow"
               >
                 Let&apos;s Talk
                 <HiArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />

@@ -71,7 +71,7 @@ export default function AiChat() {
         onClick={() => setOpen((o) => !o)}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.93 }}
-        className="fixed bottom-24 right-6 z-[190] flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-violet-600 text-white shadow-2xl shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow"
+        className="fixed bottom-24 right-6 z-[190] flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-2xl shadow-pink-500/30 hover:shadow-pink-500/50 transition-shadow"
         aria-label="Open AI chat"
       >
         <HiChatAlt2 size={20} />
@@ -125,7 +125,7 @@ export default function AiChat() {
                   <div
                     className={`max-w-[82%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
                       msg.role === 'user'
-                        ? 'bg-gradient-to-br from-blue-500 to-violet-600 text-white rounded-br-sm shadow-lg shadow-blue-500/15'
+                        ? 'bg-gradient-to-br from-pink-500 to-rose-600 text-white rounded-br-sm shadow-lg shadow-pink-500/15'
                         : 'bg-white/[0.06] border border-white/8 text-slate-200 rounded-bl-sm'
                     }`}
                   >
@@ -167,7 +167,7 @@ export default function AiChat() {
                     key={q.key}
                     onClick={() => handleQuestion(q.key, q.label)}
                     disabled={thinking}
-                    className="text-left px-3.5 py-2 rounded-xl text-xs font-medium text-slate-300 bg-white/[0.04] border border-white/8 hover:border-blue-500/30 hover:bg-blue-500/8 hover:text-white transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="text-left px-3.5 py-2 rounded-xl text-xs font-medium text-slate-300 bg-white/[0.04] border border-white/8 hover:border-pink-500/30 hover:bg-pink-500/8 hover:text-white transition-all disabled:opacity-40 disabled:cursor-not-allowed"
                   >
                     {q.label}
                   </button>
