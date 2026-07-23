@@ -23,7 +23,7 @@ const projects = [
     title: 'Inventory Master',
     emoji: '📦',
     initial: 'I',
-    image: null,
+    image: '/images/inventory-master.png',
     emojiBg: 'bg-gradient-to-br from-amber-500 to-orange-600',
     description:
       'A full-stack inventory management system for Adama City Administration to track, manage, and report on city assets — replacing manual record-keeping with a reliable digital solution.',
