@@ -38,7 +38,7 @@ const projects = [
     title: 'ATM Simulation',
     emoji: '🏧',
     initial: 'A',
-    image: null,
+    image: '/images/atm-simulation.png',
     emojiBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
     description:
       'A command-line ATM simulation in Java handling core banking: PIN authentication, balance inquiry, deposit, and withdrawal — demonstrating strong OOP and data structure fundamentals.',
@@ -53,7 +53,7 @@ const projects = [
     title: 'Personal Portfolio',
     emoji: '🌐',
     initial: 'P',
-    image: null,
+    image: '/images/my-portfolio.png',
     emojiBg: 'bg-gradient-to-br from-pink-500 to-rose-600',
     description:
       'A modern, responsive full-stack developer portfolio built with React, TypeScript, and Tailwind CSS — featuring smooth animations, an AI chat assistant, dark theme, and sections for skills, projects, and experience.',
