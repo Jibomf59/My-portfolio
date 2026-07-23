@@ -71,7 +71,7 @@ export default function AiChat() {
         onClick={() => setOpen((o) => !o)}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.93 }}
-        className="fixed bottom-24 right-6 z-[190] flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-2xl shadow-pink-500/30 hover:shadow-pink-500/50 transition-shadow"
+        className="fixed bottom-24 right-6 z-[190] flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-yellow-400 text-black shadow-2xl shadow-yellow-400/30 hover:bg-yellow-300 hover:shadow-yellow-400/50 transition-all"
         aria-label="Open AI chat"
       >
         <HiChatAlt2 size={20} />
