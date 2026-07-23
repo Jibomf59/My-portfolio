@@ -8,6 +8,7 @@ const projects = [
     title: 'AI Academic Assistant',
     emoji: '🤖',
     initial: 'A',
+    image: '/images/ai-assistant.png',
     emojiBg: 'bg-gradient-to-br from-blue-600 to-violet-700',
     description:
       'An AI-powered accessibility tool helping visually impaired students at Haramaya University access educational resources through voice interaction, real-time speech, and intelligent responses.',
@@ -22,6 +23,7 @@ const projects = [
     title: 'Inventory Master',
     emoji: '📦',
     initial: 'I',
+    image: null,
     emojiBg: 'bg-gradient-to-br from-amber-500 to-orange-600',
     description:
       'A full-stack inventory management system for Adama City Administration to track, manage, and report on city assets — replacing manual record-keeping with a reliable digital solution.',
@@ -36,6 +38,7 @@ const projects = [
     title: 'ATM Simulation',
     emoji: '🏧',
     initial: 'A',
+    image: null,
     emojiBg: 'bg-gradient-to-br from-emerald-500 to-teal-600',
     description:
       'A command-line ATM simulation in Java handling core banking: PIN authentication, balance inquiry, deposit, and withdrawal — demonstrating strong OOP and data structure fundamentals.',
@@ -50,6 +53,7 @@ const projects = [
     title: 'Personal Portfolio',
     emoji: '🌐',
     initial: 'P',
+    image: null,
     emojiBg: 'bg-gradient-to-br from-pink-500 to-rose-600',
     description:
       'A modern, responsive full-stack developer portfolio built with React, TypeScript, and Tailwind CSS — featuring smooth animations, an AI chat assistant, dark theme, and sections for skills, projects, and experience.',
@@ -104,13 +108,23 @@ export default function Projects() {
               <div className={`relative flex flex-col h-full rounded-2xl bg-white/[0.03] border border-white/8 ${project.borderHover} hover:bg-white/[0.06] transition-all duration-300 overflow-hidden group-hover:-translate-y-1`}>
 
                 {/* Visual preview */}
-                <div className={`relative h-40 ${project.emojiBg} flex items-center justify-center overflow-hidden`}>
-                  <span className="absolute text-[120px] font-black text-white/10 select-none leading-none">
-                    {project.initial}
-                  </span>
-                  <span className="relative text-6xl select-none" role="img" aria-label={project.title}>
-                    {project.emoji}
-                  </span>
+                <div className={`relative h-44 ${project.image ? '' : project.emojiBg} flex items-center justify-center overflow-hidden`}>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <>
+                      <span className="absolute text-[120px] font-black text-white/10 select-none leading-none">
+                        {project.initial}
+                      </span>
+                      <span className="relative text-6xl select-none" role="img" aria-label={project.title}>
+                        {project.emoji}
+                      </span>
+                    </>
+                  )}
                 </div>
 
                 {/* Content */}
