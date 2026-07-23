@@ -95,7 +95,7 @@ export default function Navbar() {
             <motion.a
               href="#contact"
               onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
-              className="hidden lg:flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-xl bg-yellow-400 text-black hover:bg-yellow-300 transition-colors shadow-lg shadow-yellow-400/20 hover:shadow-yellow-400/40"
+              className="hidden lg:flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white shadow-lg shadow-pink-500/20 hover:shadow-pink-500/40 transition-shadow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -150,7 +150,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, x: -16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex mt-3 text-center justify-center px-4 py-3 rounded-xl bg-yellow-400 text-black font-semibold text-sm hover:bg-yellow-300 transition-colors"
+                className="flex mt-3 text-center justify-center px-4 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm"
               >
                 Hire Me
               </motion.a>

@@ -129,7 +129,7 @@ export default function About() {
                 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-yellow-400 text-black font-semibold text-sm hover:bg-yellow-300 transition-colors shadow-lg shadow-yellow-400/20"
+                className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm shadow-lg shadow-pink-500/20 hover:shadow-pink-500/35 transition-shadow"
               >
                 Let&apos;s Talk
                 <HiArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />

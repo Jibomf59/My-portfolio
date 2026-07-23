@@ -98,7 +98,7 @@ export default function Hero() {
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
               onClick={() => scrollTo('#projects')}
-              className="group flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-yellow-400 text-black font-semibold text-sm hover:bg-yellow-300 transition-colors w-full sm:w-auto justify-center shadow-lg shadow-yellow-400/20"
+              className="group flex items-center gap-2.5 px-7 py-3.5 rounded-xl border border-white/20 text-white font-semibold text-sm hover:bg-white/6 hover:border-white/30 transition-all w-full sm:w-auto justify-center backdrop-blur-sm"
             >
               View Projects
               <HiArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

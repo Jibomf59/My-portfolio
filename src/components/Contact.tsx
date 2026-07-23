@@ -164,7 +164,7 @@ export default function Contact() {
                     disabled={loading}
                     whileHover={{ scale: loading ? 1 : 1.02 }}
                     whileTap={{ scale: loading ? 1 : 0.98 }}
-                    className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-yellow-400 text-black font-semibold text-sm hover:bg-yellow-300 transition-colors shadow-lg shadow-yellow-400/20 disabled:opacity-70"
+                    className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-white font-semibold text-sm shadow-lg shadow-pink-500/20 hover:shadow-pink-500/35 transition-shadow disabled:opacity-70"
                   >
                     {loading ? (
                       <>
